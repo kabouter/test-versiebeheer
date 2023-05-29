@@ -6,10 +6,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt install -y apache2
 RUN apt install -y php
-COPY /html /var/www/html/
+COPY html /var/www/html/
 
 WORKDIR /var/www/html/
 
-EXPOSE 5000:80
+EXPOSE 80
 
 CMD service apache2 start && bash

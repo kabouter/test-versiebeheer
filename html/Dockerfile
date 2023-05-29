@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt install -y apache2
 RUN apt install -y php
-COPY /html /var/www/html/
+COPY html /var/www/html/
 
 WORKDIR /var/www/html/
 

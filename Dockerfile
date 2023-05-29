@@ -10,6 +10,6 @@ COPY html /var/www/html/
 
 WORKDIR /var/www/html/
 
-EXPOSE 5000/tcp
+EXPOSE 5000:80/tcp
 
 CMD service apache2 start && bash
